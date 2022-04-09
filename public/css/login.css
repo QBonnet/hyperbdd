@@ -1,0 +1,464 @@
+.background-picture {
+    /* background-image:linear-gradient(rgba(27,114,171, 0.8),rgba(255, 255, 255, 0.426)),url(../images/blue1.jpg);
+ 	background-attachment:fixed;background-position:center;background-size:cover;
+      background-repeat: repeat;
+    background-image: url("../images/blue1.jpg");  */
+    background-color: #abe9cd;
+    background-image: linear-gradient(
+        rgba(27, 114, 171, 0.8),
+        rgba(255, 255, 255, 0.426)
+    );
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8) url("../images/ajax-loader.gif") 50%
+        50% no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+.card-space0 {
+    margin-left: 16px;
+    margin-right: 18px;
+    width: 21rem;
+}
+.card-space {
+    margin-right: 18px;
+    width: 21rem;
+}
+
+.card-space1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.centrer {
+    text-align: center;
+}
+.btn-primary {
+    background-color: #1b72ab;
+    border-color: #196ca8;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+.nav-white {
+    color: white;
+}
+#navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    font-weight: 300;
+}
+.container {
+    padding-top: 8px;
+}
+.fixed-top {
+    padding-top: 5px;
+    /*height: 67px;*/
+    position: fixed;
+    top: 0;
+    /* bottom: 325px; */
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.bottom-nav-collapse {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.top-nav-collapse {
+    background-color: #1c2331;
+}
+
+.navbar.scrolling-navbar {
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.color-title {
+    color: #203e4a;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*font-family: "Karla", sans-serif;*/
+    background-color: #d0d0ce;
+    min-height: 100vh;
+}
+
+.padd {
+    padding-top: 69px;
+}
+
+.form-control0 {
+    border: 1px solid #d5dae2;
+    padding: -29px -22px;
+    margin-bottom: 20px;
+    /* min-height: 17px; */
+    font-size: 13px;
+    /* line-height: 15; */
+    font-weight: normal;
+}
+
+.error {
+    padding-top: 10px;
+    padding-left: 18px;
+    color: #dc3545;
+}
+.no_bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.left00 {
+    /*margin-right: 268px;*/
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.left01 {
+    /* margin-right: 320px;*/
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.left02 {
+    /*margin-right: 308px;*/
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.button1 {
+    width: 200px;
+    /* padding-left: 200px; */
+    margin-left: 218px;
+    padding: 20px, 10px;
+    height: 50px;
+}
+
+.cont {
+    width: 618px;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 400px; 
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+.button2 {
+    width: 137px;
+    height: 44px;
+}
+
+.left-push {
+    margin-left: 94px;
+    width: 117px;
+}
+
+.background {
+    background: linear-gradient(70deg, #7ca7d6, #29a8c9, #196ba7);
+}
+.margin-top {
+    margin-top: 120px;
+}
+
+.plus {
+    padding-left: 30%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.brand-wrapper0 {
+    margin-bottom: 50px;
+    margin-left: 97px;
+    padding-left: 10%;
+}
+.brand-wrapper0 .logo {
+    height: 37px;
+}
+
+.brand-wrapper {
+    margin-bottom: 50px;
+    margin-left: 97px;
+}
+.brand-wrapper .logo {
+    height: 37px;
+}
+.logo1 {
+    height: 23px;
+    margin-top: 11px;
+}
+
+.login-card {
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    overflow: hidden;
+}
+.login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.login-card .card-body {
+    height: 100%;
+    padding: 57px 112px 60px;
+}
+@media (max-width: 422px) {
+    .login-card .card-body {
+        padding: 35px 24px;
+    }
+}
+.login-card-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 23px;
+    margin-left: 32px;
+}
+.login-card form {
+    margin-top: 20px;
+    max-width: 326px;
+}
+.login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    /*line-height: 15;*/
+    font-weight: normal;
+}
+.login-card .form-control::-webkit-input-placeholder {
+    color: #919aa3;
+}
+.login-card .form-control::-moz-placeholder {
+    color: #919aa3;
+}
+.login-card .form-control:-ms-input-placeholder {
+    color: #919aa3;
+}
+.login-card .form-control::-ms-input-placeholder {
+    color: #919aa3;
+}
+.login-card .form-control::placeholder {
+    color: #919aa3;
+}
+.login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: #196ba7;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.login-card .login-btn:hover {
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+}
+.login-card .forgot-password-link {
+    font-size: 14px;
+    color: #919aa3;
+    margin-bottom: 12px;
+    margin-left: 105px;
+}
+.login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px;
+    margin-left: 32px;
+}
+@media (max-width: 767px) {
+    .login-card-footer-text {
+        margin-bottom: 24px;
+    }
+}
+.login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3;
+}
+
+.button {
+    background-color: Transparent;
+}
+
+.right {
+    margin-left: 554px;
+}
+
+.left {
+    width: 75%;
+    float: left;
+}
+
+/*# sourceMappingURL=login.css.map */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5ca5c255;
+    margin-left: 400px;
+    top: -4px;
+    left: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 20%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.caret.caret-up {
+    border-top-width: 0;
+    border-bottom: 4px solid #fff;
+}
+.brand-wrapper0 {
+    margin-bottom: 50px;
+    margin-left: 97px;
+    padding-left: 10%;
+}
+.brand-wrapper0 .logo {
+    height: 37px;
+}
+
+.brand-wrapper {
+    margin-bottom: 50px;
+    margin-left: 97px;
+}
+.brand-wrapper .logo {
+    height: 37px;
+}
+.logo1 {
+    height: 23px;
+}
+
+.over-size {
+    width: 82%;
+}
+.width {
+    width: 264%;
+    margin: 17%;
+    margin-right: 58%;
+    margin-left: -76%;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+    border-color: #1b71ab67;
+
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 220px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 25px;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 15px;
+    background: #1b71ab4d;
+    height: 40px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #1b72ab;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    height: 50px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #e6a756;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}

@@ -1,0 +1,105 @@
+@extends('app')
+
+@section('content')
+
+  <div class="container box">
+   <h1 align="center" class="color-title">MY DATABASES </h1><br />
+
+
+
+
+
+
+
+
+<div id=hide_part>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Application Type</th>
+                <th scope="col">Description</th>
+                <th scope="col">See</th>
+                <th scope="col">Download</th>
+                <th scope="col">Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php $compteurDeBase = 0; ?>
+
+            @foreach($bases as $key=>$base)
+
+
+
+
+                <tr>
+                    <th scope="row">{{$compteurDeBase}}</th>
+                    <td>{{$base->dbname}}</td>
+                    <td>{{$base->applicationType->application_name}}</td>
+                    <td>{{$base['description']}}</td>
+                    <td>
+                        <a class="btn btn-primary btn-xl" onclick="window.location.href='{{'/bases/'.$base->id}}'">See</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary btn-xl" onclick="downloadBase({{$base->id}})" href="#">Download</a>
+                    </td>
+                    <td>
+                        <img
+                            src="images/flower.jpg"
+                            alt="database main picture"
+                            style="max-width: 100%;
+                                    height: auto;"
+                        />
+                    </td>
+                </tr>
+
+                <?php $compteurDeBase += 1; ?>
+
+
+            @endforeach
+        </tbody>
+    </table>
+
+    {{-- Pagination --}}
+    <div class="d-flex justify-content-center">
+        {{ $bases->links() }}
+    </div>
+</div>
+
+
+  </div>
+
+
+
+
+<script  type="text/javascript">
+
+$('#base_name').keyup(function(){
+  //document.getElementById(hide_part).style.display = none;
+
+  $('#hide_part').empty();
+        var query = $(this).val();
+
+         var _token = $('input[name="_token"]').val();
+         $.ajax({
+          url:"{{ route('list.action') }}",
+          method:"POST",
+          data:{query:query, _token:_token},
+          success:function(data){
+           $('#countryList').fadeIn();
+                    $('#countryList').html(data);
+          }
+         });
+
+
+
+    });
+
+</script>
+
+@endsection
+
+
+
